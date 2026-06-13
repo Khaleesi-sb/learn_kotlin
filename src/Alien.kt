@@ -1,5 +1,10 @@
 class Alien {
-    var name : String = "";
+    var name : String = ""
+    var skill : String? = null
+
+    fun show(){
+        println(skill)
+    }
 }
 
 // val -> creating a constant variable

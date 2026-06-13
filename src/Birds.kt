@@ -1,6 +1,10 @@
 class Birds {
     var hasWings: Boolean = false
     var name: String? = null
+
+    fun any(){
+        dataTypes()
+    }
 }
 
 //public class Birds {
