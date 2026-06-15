@@ -1,5 +1,5 @@
 fun main() {
-    val alien = Alien()
+    val alien = Alien(9)
     println("Hello World!")
     alien.name = "Harry"
     println("name is : ${alien.name}")
@@ -14,7 +14,7 @@ fun main() {
     compareString("Shilpa", "Shilpa")
     // null safety
     val str : String? = null
-    var jadu : Alien? = Alien()
+    var jadu : Alien? = Alien(8)
     jadu = null
     println(jadu?.name) // ? name if jadu is not null
     println(str ?: "something...") // ?: if null, use right operator

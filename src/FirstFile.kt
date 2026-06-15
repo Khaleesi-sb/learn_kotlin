@@ -1,12 +1,12 @@
 @file: JvmName("First")
 
 fun main(){
-    val a = Alien()
+    val a = Alien(6)
     a.name = "harry"
     a.skill = "Development"
     a.show()
 
-    val b = Alien()
+    val b = Alien(4)
     b.name = "voldemort"
     b.skill = "SQL"
     b.show()
@@ -16,7 +16,7 @@ fun main(){
     c.show()
     // inline function
     a kills b
-
+    // operator overloading
     a - 5
 }
 
@@ -27,7 +27,7 @@ infix operator fun Alien.minus(a : Int){
 
 // extension function
 fun Alien.plus(a : Alien) : Alien{
-    val newAlien = Alien()
+    val newAlien = Alien(55)
     newAlien.skill = this.skill + " " + a.skill
     return newAlien
 }
