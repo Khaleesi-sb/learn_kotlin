@@ -13,10 +13,18 @@ fun main() {
             println("Anonymous inner class example of interface")
         }
     }
+    val c : Another.World = Another.World()
+    c.greet()
 }
 
 open class Another{
     open fun example(){
         println("ABC...")
+    }
+
+    class World{
+        fun greet(){
+            println("Hello world")
+        }
     }
 }
