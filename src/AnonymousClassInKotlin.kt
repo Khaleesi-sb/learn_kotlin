@@ -15,6 +15,8 @@ fun main() {
     }
     val c : Another.World = Another.World()
     c.greet()
+    A.name = "shilpa"
+    A.show()
 }
 
 open class Another{

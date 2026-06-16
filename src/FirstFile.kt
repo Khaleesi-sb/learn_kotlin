@@ -14,6 +14,8 @@ fun main(){
     // extension function
     val c = a.plus(b)
     c.show()
+
+    a.save(b)
     // inline function
     a kills b
     // operator overloading
@@ -35,6 +37,10 @@ fun Alien.plus(a : Alien) : Alien{
 // infix function
 infix fun Alien.kills(a : Alien){
     println("${this.name} killed ${a.name}")
+}
+
+fun Alien.save(a: Alien){
+    println(this.name + " saves " + a.name)
 }
 
 fun dataTypes(){
